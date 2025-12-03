@@ -56,8 +56,21 @@ plt.savefig(output)
 print(f"Guardada figura en {output}")
 ```
 
+### Puntos clave al ejecutar
+- Observa si aparece una advertencia de convergencia; si sí, aumenta `max_iter` o prueba `solver="lbfgs"`.
+- Cambia `test_size` a 0.3 y nota cómo varía la métrica.
+- Explora `df.describe()` y `df.head()` para entender el rango de features.
+
 ## Ejercicios
 1. **Reproduce el script** y verifica la matriz de confusión generada.
 2. Cambia el modelo a `RandomForestClassifier` y compara F1.
 3. Añade estandarización con `StandardScaler` y observa impacto en regresión logística.
 4. Documenta resultados en `docs/ejercicios.md` (tabla comparativa de métricas).
+
+## Extensiones interactivas
+- **Tabla de experimentos:** crea un CSV con columnas `modelo`, `hiperparámetros`, `accuracy`, `f1`, `nota`. Actualízalo tras cada corrida.
+- **Interpretabilidad rápida:** imprime `model.coef_` y escribe en una frase qué feature pesa más.
+- **Modo cuestionario:** responde en tu cuaderno:
+  - ¿Qué cambia si eliminas una feature? ¿La métrica mejora o empeora?
+  - ¿Qué combinación de `max_iter` y `penalty` dio mejor equilibrio entre precisión y tiempo?
+- **Visual extra:** usa `sns.pairplot(df, hue="target")` (requiere `seaborn`) para visualizar separabilidad antes de entrenar.
