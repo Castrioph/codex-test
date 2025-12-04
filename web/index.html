@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guía interactiva de IA</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">Ruta práctica</p>
+      <h1>Aprende IA en pasos pequeños</h1>
+      <p class="lead">Explora la guía en español, repasa la terminología y sigue las actividades sin salir de tu navegador.</p>
+      <div class="actions">
+        <a class="btn primary" href="../docs/README.md" target="_blank" rel="noreferrer">Ver guía completa</a>
+        <button id="start-btn" class="btn ghost">Empezar aquí</button>
+      </div>
+    </div>
+    <div class="stats-card">
+      <p class="label">Estado del lector</p>
+      <div class="stat">
+        <span class="value" id="stat-title">Bases de IA</span>
+        <span class="hint">Selecciona un módulo para ver el contenido</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <p class="sidebar-title">Módulos</p>
+      <div class="search-box">
+        <input id="search-input" type="search" placeholder="Buscar módulo..." aria-label="Buscar módulo" />
+      </div>
+      <ul id="doc-list" class="doc-list"></ul>
+    </aside>
+    <section class="content">
+      <div class="content-header">
+        <div>
+          <p class="pill">Leyendo</p>
+          <h2 id="current-title">Bases de IA</h2>
+        </div>
+        <div class="content-actions">
+          <button id="copy-link" class="btn ghost small" type="button">Copiar enlace</button>
+          <a id="open-source" class="btn ghost small" href="../docs/01_bases_ia.md" target="_blank" rel="noreferrer">Ver Markdown</a>
+        </div>
+      </div>
+      <article id="content" class="markdown">Cargando contenido...</article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>La ruta está pensada para leerse en orden. Marca avances en <strong>docs/ejercicios.md</strong> y vuelve a los temas cuando lo necesites.</p>
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+</html>
