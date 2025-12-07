@@ -1,43 +1,42 @@
-# Guía de aprendizaje de IA
+# Guia de aprendizaje de IA
 
-Esta guía organiza una ruta de autoaprendizaje sobre Inteligencia Artificial (IA) en español. Incluye conceptos clave, ejercicios y prácticas guiadas para que construyas tus propios modelos y aproveches modelos existentes.
+Ruta progresiva para aprender IA. Los capitulos viven en `docs/` (sin subcarpetas nuevas por restricciones de permisos).
 
-## Cómo usar este repositorio
-- Lee los módulos en orden: cada archivo numerado en `docs/` suma sobre el anterior.
-- Realiza los ejercicios prácticos: están señalados en cada módulo y recopilados en `docs/ejercicios.md`.
-- Mantén un cuaderno de notas: registra dudas, resultados de experimentos y lecturas adicionales.
-- Itera: vuelve sobre módulos anteriores cuando un concepto no quede claro o al enfrentar un problema real.
-- Haz la guía interactiva: responde las preguntas de reflexión, completa las mini-rúbricas y replica los fragmentos de código.
+## Orden sugerido
+1) [Introduccion a la IA](./intro.md)  
+2) [Fundamentos matematicos](./fundamentals.md)  
+3) [Redes neuronales desde cero](./neural_networks.md)  
+4) [Deep Learning](./deep_learning.md)  
+5) [Transformers](./transformers.md)  
+6) [LLMs](./llms.md)  
+7) [RAG](./rag.md)  
+8) [Fine-tuning](./fine_tuning.md)  
+9) [Crear tu propia IA](./building_your_ai.md)  
+10) [Proyectos finales](./projects.md)  
+11) [Guia de ejercicios](./exercises.md) + historial en `./ejercicios.md`
 
-## Índice sugerido
-1. [Bases de IA](./01_bases_ia.md)
-2. [Terminología y conceptos esenciales](./02_terminologia_y_conceptos.md)
-3. [Fundamentos de modelos y entrenamiento](./03_fundamentos_modelos.md)
-4. [Crea tu primer modelo](./04_crea_tu_primer_modelo.md)
-5. [Aprovecha modelos existentes](./05_aprovecha_modelos.md)
-6. [Ejercicios y proyectos](./ejercicios.md)
+## Como sacarle provecho
+- Lee en orden; cada capitulo asume el anterior.  
+- Ejecuta los snippets y cambia parametros para observar efectos.  
+- Completa las preguntas y miniretos de cada seccion.  
+- Documenta tus pruebas en `exercises.md` o en tu cuaderno.
 
-## Mapa visual del flujo de un proyecto
+## Flujo tipico de un proyecto
 ```
-Idea/Problema -> Datos -> Limpieza/EDA -> Modelo -> Entrenamiento -> Evaluación -> Despliegue -> Monitoreo
-        ^                                                                                     |
-        |------------------------------------ Retroalimentación ------------------------------|
+Idea -> Datos -> Limpieza/EDA -> Modelo -> Evaluacion -> Despliegue -> Monitoreo -> Mejora
 ```
 
-## Ritmo sugerido de estudio
-- **Sesiones cortas (25-40 min):** lee un módulo y toma notas activas.
-- **Sesiones de práctica (1-2 h):** corre los scripts y modifica hiperparámetros.
-- **Sesiones de reflexión (15 min):** responde los checklists de ética, riesgos y métricas.
+## Ritmo sugerido
+- 30-40 min de lectura + 20 min de practica por capitulo.  
+- Repite con variaciones de codigo; la iteracion solidifica conceptos.
 
-## Requisitos básicos
-- Python 3.10+ instalado.
-- Familiaridad con la línea de comandos.
-- Editor de texto o IDE (VS Code, PyCharm, etc.).
-- Opcional: GPU para acelerar entrenamiento con bibliotecas como PyTorch o TensorFlow.
+## Requisitos basicos
+- Python 3.10+ y pip.  
+- Editor de texto (VS Code recomendado).  
+- (Opcional) GPU para acelerar entrenamientos.
 
-## Próximos pasos interactivos
-1. Lee `01_bases_ia.md` y dibuja en tu cuaderno el mapa visual adaptado a tu proyecto.
-2. Configura un entorno virtual y realiza el primer ejercicio de terminología en `02_terminologia_y_conceptos.md`.
-3. Sigue la guía de `04_crea_tu_primer_modelo.md` para entrenar un clasificador sencillo y guarda la figura generada.
-4. Experimenta con modelos preentrenados siguiendo `05_aprovecha_modelos.md` e implementa un prompt de evaluación automática.
-5. Documenta tus hallazgos en `docs/ejercicios.md` con fechas, métricas y decisiones tomadas.
+## Primeros pasos rapidos
+1. Activa entorno virtual y ejecuta el ejemplo de `intro.md`.  
+2. Calcula a mano el gradiente en `fundamentals.md`.  
+3. Ajusta el MLP de `neural_networks.md` y mira la perdida.  
+4. Registra hallazgos en `exercises.md`.

@@ -1,27 +1,33 @@
 # Ruta de aprendizaje de IA
 
-Este repositorio es una guía práctica en español para aprender los fundamentos de la Inteligencia Artificial (IA) con un enfoque en práctica y ejercicios reproducibles.
+Guia pedagogica para aprender Inteligencia Artificial desde cero hasta nivel avanzado, con ejemplos en Python y ejercicios cortos.
 
-## Contenido
-- **Módulos teóricos y prácticos:** en `docs/` encontrarás la ruta completa con conceptos clave, ejercicios y scripts de ejemplo.
-- **Ejercicio guiado:** `docs/04_crea_tu_primer_modelo.md` contiene un script base para entrenar un clasificador Iris con `scikit-learn`.
-- **Checklist de progreso:** usa `docs/ejercicios.md` para marcar avances y documentar experimentos.
-- **Lector web:** abre `web/` para buscar módulos, copiar enlaces directos y leer los Markdown en el navegador.
+## Estructura principal (en `docs/`)
+1. [Introduccion a la IA](docs/intro.md)
+2. [Fundamentos matematicos](docs/fundamentals.md)
+3. [Redes neuronales desde cero](docs/neural_networks.md)
+4. [Deep Learning: CNNs, RNNs, Transformers](docs/deep_learning.md)
+5. [Transformers paso a paso](docs/transformers.md)
+6. [Grandes Modelos de Lenguaje (LLMs)](docs/llms.md)
+7. [RAG](docs/rag.md)
+8. [Fine-tuning y entrenamiento personalizado](docs/fine_tuning.md)
+9. [Crear tu propia IA (3 niveles)](docs/building_your_ai.md)
+10. [Proyectos finales](docs/projects.md)
+11. [Guia de ejercicios](docs/exercises.md) + historial previo en `docs/ejercicios.md`
 
-## Cómo empezar
-1. Lee `docs/README.md` para entender el orden recomendado de estudio.
-2. Prepara tu entorno Python 3.10+ y crea un entorno virtual (`python -m venv .venv`).
-3. Sigue el módulo `docs/04_crea_tu_primer_modelo.md` para correr tu primer modelo.
-4. Experimenta con modelos preentrenados usando las ideas de `docs/05_aprovecha_modelos.md`.
+> Nota: No se crearon nuevas carpetas por restricciones de permisos; los capitulos viven en `docs/` con nombres claros.
 
-## Estructura
-- `docs/`: guía paso a paso, terminología y ejercicios.
-- `experimentos/`: carpeta sugerida para scripts y resultados locales.
-- `web/`: vista rápida en HTML/JS para leer los módulos desde el navegador.
+## Como empezar
+1. Crea un entorno: `python -m venv .venv && .\\.venv\\Scripts\\activate` (Windows) o `source .venv/bin/activate` (Linux/Mac).  
+2. Lee `docs/intro.md` y ejecuta los ejemplos.  
+3. Avanza en orden; cada archivo incluye ejercicios rapidos.  
+4. Registra tus pruebas en `docs/exercises.md` o en `docs/ejercicios.md`.
 
-## Servir la guía como una web local
-1. Instala Python 3.10+.
-2. Desde la raíz del repositorio ejecuta un servidor simple: `python -m http.server 8000`.
-3. Abre `http://localhost:8000/web/` en tu navegador. El lector carga los archivos Markdown desde `docs/` y te permite navegar los módulos.
+## Lector web opcional
+Sirve el repo y abre la vista HTML:
+```
+python -m http.server 8000
+```
+Luego entra a `http://localhost:8000/web/` para navegar los markdowns.
 
-¡Disfruta aprendiendo IA y registra tus descubrimientos!
+Disfruta el camino y documenta tus experimentos.
