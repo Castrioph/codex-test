@@ -2,6 +2,8 @@
 
 Guia pedagogica para aprender Inteligencia Artificial desde cero hasta nivel avanzado, con ejemplos en Python y ejercicios cortos.
 
+Este repositorio se trabaja con el modelo **gpt-5.1-codex-max** y sirve como bitácora para aprender sobre IA usando la propia IA: cada cambio y explicación se apoya en asistentes que ayudan a iterar, documentar y probar conceptos rápidamente.
+
 ## Estructura principal (en `docs/`)
 1. [Introduccion a la IA](docs/intro.md)
 2. [Fundamentos matematicos](docs/fundamentals.md)
